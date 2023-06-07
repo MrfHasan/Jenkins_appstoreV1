@@ -62,8 +62,8 @@ def lambda_handler(event, context):
                 if app_version == current_versions[i]:
                     message = f"Dear concern,\n\n{app_name} is available on the Apple App Store and it is up to date. No need to worry.\n\nRegards,\nTeam GIM"
                     print(message)
-                    subject = f"{app_name} is available on Apple App Store"
-                    send_email(subject, message)
+                    # subject = f"{app_name} is available on Apple App Store"
+                    # send_email(subject, message)
 
                 else:
                     message = f"Dear concern,\n\n{app_name} is available on the Apple App Store, but it is not up to date. Please update to version {app_version}.\n\nRegards,\nTeam GIM"
